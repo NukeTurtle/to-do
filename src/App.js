@@ -1,9 +1,10 @@
+import ListProjects from "./components/List Projects";
+import listProjects from "./components/List Projects";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-          Learn React
-      </header>
+      <ListProjects></ListProjects>
     </div>
   );
 }
