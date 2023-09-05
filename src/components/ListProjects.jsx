@@ -1,16 +1,13 @@
-import Projects from "../data/projects.json"
-import React from "react";
+import { projects } from "../data/projects.js"
 
 const ListProjects = () => {
     return (
         // DOM output
         <>
-            {Projects && Projects.map(({ project }) => (
-                <div className="btn">
-                    <div className="projectName">
-                        <div>
-                            {project}
-                        </div>
+            {projects && projects.map(({ project, id }) => (
+                <div className="projectName" key={id}>
+                    <div className="btn">
+                        {project}
                     </div>
                 </div>
             ))}

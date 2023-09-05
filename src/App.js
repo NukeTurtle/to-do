@@ -1,14 +1,14 @@
-// import React from "react";
+import React from "react";
 import ListProjects from "./components/ListProjects";
 
 function App() {
   return (
-      <>
-    <div className="App">
-      <ListProjects>
-      </ListProjects>
-    </div>
-      </>
+    <>
+      <div className="App">
+        <ListProjects>
+        </ListProjects>
+      </div>
+    </>
   );
 }
 
