@@ -4,10 +4,10 @@ const ListProjects = () => {
     return (
         // DOM output
         <>
-            {projects && projects.map(({ project, id }) => (
+            {projects && projects.map(({ projectName, id }) => (
                 <div className="projectName" key={id}>
                     <div className="btn">
-                        {project}
+                        {projectName}
                     </div>
                 </div>
             ))}

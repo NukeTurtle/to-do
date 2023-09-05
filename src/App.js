@@ -1,5 +1,6 @@
 import React from "react";
 import ListProjects from "./components/ListProjects";
+import ListTodos from "./components/ListTodos";
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <div className="App">
         <ListProjects>
         </ListProjects>
+        <ListTodos>
+        </ListTodos>
       </div>
     </>
   );
