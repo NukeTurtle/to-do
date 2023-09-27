@@ -23,7 +23,7 @@ export const projects = [
             id: 325245,
             todoTitle: "Backend Development",
             todoStatus: "Not Started",
-            todoPriority: "High",
+            todoPriority: "Low",
             todoDescription: "Set up the server and database"
           },
           {
@@ -81,7 +81,7 @@ export const projects = [
             id: 923463,
             todoTitle: "Write History Essay",
             todoStatus: "Pending",
-            todoPriority: "Medium",
+            todoPriority: "Low",
             todoDescription: "Research and write a history essay"
           }
         ]

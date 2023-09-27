@@ -1,17 +1,18 @@
+import ListProjects from "../components/ListProjects";
 import { projects } from "../data/projects.js"
 
-const ListProjects = () => {
+const Projects = () => {
     return (
-        <>
-            {projects && projects.map(({ projectName, id }) => (
+    <ListProjects>
+        {projects && projects.map(({ projectName, id }) => (
                 <div className="projectName" key={id}>
                     <div className="btn">
                         {projectName}
                     </div>
                 </div>
             ))}
-        </>
+    </ListProjects>
     )
-}
-
-export default ListProjects;
+  };
+  
+  export default Projects;
