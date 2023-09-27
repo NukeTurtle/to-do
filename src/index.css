@@ -72,3 +72,47 @@ body {
 .Low{
   border-color: green !important;
 }
+
+
+/* CUSTOM PAGE */
+
+.projectButton {
+  width: 100px;
+  height: 30px;
+  display: block;
+  border: 1px solid #000;
+}
+
+.project.projectOverlay {
+  background-color: yellow;
+  z-index: 2;
+  transition: 1s ease-in-out;
+}
+
+.project {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+}
+
+.project.projectDelete {
+  background-color: red;
+  z-index: 1;
+}
+
+.project.projectOverlay:hover {
+  width: 70px;
+  transition: 1s ease-in-out;
+}
+
+.project.projectOverlay:hover::after {
+  content: "";
+  background: url("./assets/bin.svg") no-repeat;
+  width: 20px;
+  height: 30px;
+  right: -26px;
+  position: absolute;
+  background-position: 0px 5px;
+  background-size: 20px 20px;
+  bottom: -1px;
+}
